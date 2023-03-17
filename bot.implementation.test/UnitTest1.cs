@@ -1,20 +1,11 @@
-
-using automatonGame.bot.implementation;
-
 namespace automatonGame.bot.implementation.test
 {
-    public class Tests
+    public class Tests : BaseBotTest
     {
-        [SetUp]
-        public void Setup()
-        {
-            var a = RobotFactory.Create();
-        }
-
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            Assert.IsNotNull(Robot);
         }
     }
 }
