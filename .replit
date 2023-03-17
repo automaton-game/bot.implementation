@@ -1,5 +1,5 @@
 run = "dotnet test ./bot.implementation.test"
-#entrypoint = "main.cs"
+entrypoint = "MiRobot.cs"
 
 hidden = ["bin", "*/bin", "*/obj", "obj", ".git", ".gitignore", ".github", "*/*.csproj", "bot.implementation.test/common", "bot.implementation.test/Usings.cs"]
 
