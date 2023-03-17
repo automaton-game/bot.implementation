@@ -1,6 +1,6 @@
-﻿using AutomataNETjuegos.Contratos.Entorno;
-using AutomataNETjuegos.Contratos.Helpers;
-using AutomataNETjuegos.Contratos.Robots;
+﻿using automatonGame.bot.interfaces.Entorno;
+using automatonGame.bot.interfaces.Helpers;
+using automatonGame.bot.interfaces.Robots;
 
 
 namespace automatonGame.bot.implementacion {
