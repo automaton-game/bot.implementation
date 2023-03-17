@@ -8,7 +8,7 @@ namespace automatonGame.bot.implementation.test
         [SetUp]
         public void Setup()
         {
-            var a = new MiRobot();
+            var a = RobotFactory.Create();
         }
 
         [Test]
