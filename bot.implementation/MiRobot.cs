@@ -3,7 +3,7 @@ using automatonGame.bot.interfaces.Helpers;
 using automatonGame.bot.interfaces.Robots;
 
 
-namespace automatonGame.bot.implementacion {
+namespace automatonGame.bot.implementation {
     public class MiRobot : IRobot
     {
         public Tablero Tablero 
