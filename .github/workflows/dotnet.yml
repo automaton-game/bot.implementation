@@ -2,7 +2,8 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
 name: .NET
-
+env:
+  ruta: ./bot.implementation.test
 on:
   push:
     branches: [ "master" ]
@@ -23,11 +24,11 @@ jobs:
     - name: Path
       run: cd bot.implementation.test
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ${{ env.ruta }}
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore ${{ env.ruta }}
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal ${{ env.ruta }}
     - name: Run Parasoft dotTEST
       # You may pin to the exact commit or the version.
       # uses: parasoft/run-dottest-action@e40322f10a96f38813193c7fc6cd6d9c782e5b31
